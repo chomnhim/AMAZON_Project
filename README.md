@@ -165,19 +165,20 @@ Chạy các notebook theo thứ tự sau để tái hiện kết quả:
 [cite_start]Cấu trúc thư mục tuân theo yêu cầu đề bài [cite: 56-72]:
 project-name/
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── data/		
 │   ├── raw/           	# Dữ liệu gốc
 │   └── processed/      # Dữ liệu đã xử lý
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── 03_modeling.ipynb
+│   ├── 01_data_exploration.ipynb   
+│   ├── 02_preprocessing.ipynb      
+│   └── 03_modeling.ipynb          
 ├── src/
-│   ├── __init__.py
-│   ├── data_processing.py
-│   ├── visualization.py
-│   └── models.py
+│   ├── __init__.py            
+│   ├── data_processing.py      
+│   ├── visualization.py         
+│   └── models.py                
 ```
 ---
 
