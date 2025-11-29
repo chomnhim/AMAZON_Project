@@ -1,0 +1,15 @@
+# Core Dependencies - Required for all computations
+numpy>=1.21.0,<2.0.0
+scipy>=1.7.0,<2.0.0
+
+# Visualization - Required for plotting
+matplotlib>=3.4.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
+
+# Python Standard Library (already included, listed for reference)
+collections (Counter)
+datetime (datetime)
+time (time)
+warnings (warnings)
+gc (garbage collection)
+os (file operations)
