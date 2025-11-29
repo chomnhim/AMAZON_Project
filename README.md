@@ -1,6 +1,3 @@
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 # Amazon Beauty Recommendation System (NumPy Implementation)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
@@ -61,10 +58,17 @@ Dự án cài đặt 3 thuật toán chính hoàn toàn bằng NumPy/SciPy:
 
 #### a. User-Based Collaborative Filtering
 Dự đoán rating dựa trên độ tương đồng giữa các người dùng.
-- **Công thức Similarity (Cosine):**
-  $$sim(u, v) = \frac{r_u \cdot r_v}{||r_u|| \cdot ||r_v||}$$
-- **Dự đoán:**
-  $$\hat{r}_{ui} = \bar{r}_u + \frac{\sum_{v \in N_i(u)} sim(u, v) (r_{vi} - \bar{r}_v)}{\sum_{v \in N_i(u)} |sim(u, v)|}$$
+* **Công thức Similarity (Cosine):**
+
+$$
+sim(u, v) = \frac{r_u \cdot r_v}{||r_u|| \cdot ||r_v||}
+$$
+
+* **Dự đoán:**
+
+$$
+\hat{r}_{ui} = \bar{r}_u + \frac{\sum_{v \in N_i(u)} sim(u, v)(r_{vi} - \bar{r}_v)}{\sum_{v \in N_i(u)} |sim(u, v)|}
+$$
 
 #### b. Item-Based Collaborative Filtering
 Tương tự User-based nhưng tính toán độ tương đồng giữa các sản phẩm. Thường ổn định hơn User-based khi lượng người dùng lớn hơn lượng sản phẩm.
