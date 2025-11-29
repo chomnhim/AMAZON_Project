@@ -1,8 +1,5 @@
 # Amazon Beauty Recommendation System (NumPy Implementation)
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![NumPy](https://img.shields.io/badge/Library-NumPy-green)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
