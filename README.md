@@ -146,8 +146,6 @@ Chạy các notebook theo thứ tự sau để tái hiện kết quả:
 
 **Kết luận:** Việc cài đặt thuật toán **Matrix Factorization (ALS)** sử dụng thuần **NumPy** đã chứng minh được hiệu quả vượt trội so với các phương pháp truyền thống trên bộ dữ liệu thưa như Amazon Beauty. Đây là lựa chọn tối ưu để triển khai hệ thống gợi ý trong thực tế cho bài toán này.
 
-![Model Comparison](data/processed/model_comparison.png)
-
 ---
 
 ## 7. Cấu trúc dự án
