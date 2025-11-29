@@ -76,8 +76,12 @@ Tương tự User-based nhưng tính toán độ tương đồng giữa các s�
 #### c. Matrix Factorization (ALS - Alternating Least Squares)
 Phân rã ma trận Rating $R$ thành hai ma trận tiềm ẩn $P$ (User features) và $Q$ (Item features) sao cho $R \approx P \times Q^T$.
 - **Hàm mất mát (Loss Function):**
-  $$L = \sum_{(u,i) \in \mathcal{K}} (r_{ui} - p_u q_i^T)^2 + \lambda (||p_u||^2 + ||q_i||^2)$$
-- **Tối ưu hóa:** Cố định $P$ để giải $Q$ và ngược lại lặp đi lặp lại cho đến khi hội tụ. Giải phương trình đạo hàm bằng không bằng NumPy Linear Algebra (`np.linalg.solve`).
+
+$$
+L = \sum_{(u,i) \in \mathcal{K}} (r_{ui} - p_u q_i^T)^2 + \lambda (\|p_u\|^2 + \|q_i\|^2)
+$$
+
+- **Tối ưu hóa:** Cố định $P$ để giải $Q$ và ngược lại, lặp đi lặp lại cho đến khi hội tụ (Alternating Least Squares - ALS). Giải phương trình đạo hàm bằng 0 sử dụng NumPy Linear Algebra (`np.linalg.solve`).
 
 ### Kỹ thuật NumPy đã sử dụng
 - **Vectorization:** Loại bỏ hoàn toàn vòng lặp Python khi tính toán Similarity và Prediction.
