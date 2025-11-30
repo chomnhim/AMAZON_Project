@@ -162,7 +162,7 @@ Chạy các notebook theo thứ tự sau để tái hiện kết quả:
 ## 7. Cấu trúc dự án
 
 ```text
-[cite_start]Cấu trúc thư mục tuân theo yêu cầu đề bài [cite: 56-72]:
+Cấu trúc thư mục tuân theo yêu cầu đề bài:
 project-name/
 ├── README.md
 ├── LICENSE
@@ -208,9 +208,9 @@ project-name/
 
 ## 10. Tác giả
 
-**Họ và tên:** [Nguyễn XUân Quang]
+**Họ và tên:** Nguyễn XUân Quang
 
-**MSSV:** [23122047]
+**MSSV:** 23122047
 
 **Lớp:** 23TNT1
 
